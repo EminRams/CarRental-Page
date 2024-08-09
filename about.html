@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Sobre Nosotros</title>
+  </head>
+  <body>
+    <div class="header bg-green">
+      <div class="header-item">
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <h1>Luxury Cars</h1>
+      </div>
+
+      <div class="nav-header">
+        <a href="/index.html">Inicio</a>
+        <a href="/saleCars.html">Vehiculos en Venta</a>
+        <a href="/rentService.html">Servicio de Renta</a>
+        <a href="/about.html">Sobre Nosotros</a>
+        <a href="/contact.html">Contactanos</a>
+      </div>
+
+      <div class="header-item">
+        <img src="/images/logo2.png" height="40px" alt="Logo" />
+      </div>
+    </div>
+
+    <section class="section">
+      <img class="bg-dotted" src="/images/toyota-camry.png" alt="" />
+      <div>
+        <h1>Sobre Nosotros</h1>
+        <p>
+          ¡Rent Luxe Car es un experto en el prestigioso alquiler de automóviles
+          de lujo! Contamos con una extensa flota de modelos de las legendarias
+          marcas mundiales. Solo aquí encontrarás las modificaciones más
+          recientes y los nuevos artículos. En Rent Luxe Car puedes pedir un
+          alquiler de coche en cualquier ciudad de Europa, y con las tarifas más
+          atractivas.
+        </p>
+      </div>
+    </section>
+
+    <section class="section bg-green">
+      <div class="white-text">
+        <h1>Nuestros Vehiculos</h1>
+        <p>
+          En la flota de Rent Luxe Car encontrará cualquier modelo de acuerdo
+          con sus gustos y preferencias. Aquí puede alquilar elegantes sedanes
+          ejecutivos, autos deportivos de alta tecnología, convertibles con
+          estilo, SUV de lujo, minivans de lujo.
+        </p>
+        <p>
+          La lista de nuestras marcas incluye nombres tan famosos como Ferrari,
+          Bentley, Maserati, Porsche, Rolls-Royce y muchas otras leyendas
+          mundiales. Nuestra flota se expande y actualiza constantemente con
+          nuevas muestras exclusivas y nuevos productos, ¡porque nuestra misión
+          es el mejor servicio y la máxima comodidad para cada cliente!
+        </p>
+      </div>
+      <img class="bg-" src="/images/about-img.png" alt="" />
+    </section>
+    <footer>
+      <div>
+        <h3>Ciudades Populares</h3>
+        <p>San Pedro</p>
+        <p>Villanueva</p>
+        <p>Tegucigalpa</p>
+        <p>La Ceiba</p>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <a href="#footer">luxuryrentcar@gmail.com</a>
+      </div>
+      <div>
+        <h3>Redes Sociales</h3>
+        <a href="#footer">Facebook</a>
+        <a href="#footer">Instagram</a>
+        <a href="#footer">WhatsApp</a>
+      </div>
+      <div>
+        <h3>Soporte</h3>
+        <a href="#footer">Preguntas Frecuentes</a>
+        <a href="#footer">Ayuda en Linea</a>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  function toggleMenu() {
+    const navHeader = document.querySelector(".nav-header");
+    navHeader.classList.toggle("show");
+    const section = document.querySelector(".section");
+    section.classList.toggle("move-header");
+  }
+</script>
